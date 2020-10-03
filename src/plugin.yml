@@ -1,0 +1,10 @@
+name: anvilMenu
+version: 1.0
+author: Dylan Huynh
+main: com.dylan.anvil.anvilMenu
+api-version: 1.14
+commands:
+  anvil:
+    description: calls the anvil Inventory for the player
+    usage: /<command>
+    aliasses: a
