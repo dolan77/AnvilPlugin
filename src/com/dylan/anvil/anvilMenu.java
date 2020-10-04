@@ -1,6 +1,7 @@
 // Build  -> Build Artifacts -> Build to update plugin with new code
 package com.dylan.anvil;
 
+import com.dylan.anvil.commands.AnvilCommands;
 import com.dylan.anvil.events.AnvilEvents;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -14,8 +15,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class anvilMenu extends JavaPlugin {
     @Override
     public void onEnable(){
-        getServer().getPluginManager().registerEvents(new AnvilEvents(),this);
+        // creates a new class that is set to the variable anvilCommands
+        AnvilCommands anvilCommands = new AnvilCommands();
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[anvilMenu] is enabled!");
+        getCommand("anvil").setExecutor(anvilCommands);
     }
 
     @Override
