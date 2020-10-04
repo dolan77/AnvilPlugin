@@ -19,14 +19,10 @@ public class AnvilCommands implements CommandExecutor {
         if (cmd.getName().equalsIgnoreCase("anvil")) {
             // creates a player variable from the one who is writing down the command
             Player player = (Player) sender;
-
             // creates an Inventory variable called anvilMenu and that variable is set to the InventoryType Anvil
             Inventory anvilMenu = Bukkit.createInventory(player, InventoryType.ANVIL);
-
             // opens the player's inventory, which in this case is the anvil
             player.openInventory(anvilMenu);
-
-
         }
         return true;
     }

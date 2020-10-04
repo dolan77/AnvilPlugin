@@ -2,7 +2,6 @@
 package com.dylan.anvil;
 
 import com.dylan.anvil.commands.AnvilCommands;
-import com.dylan.anvil.events.AnvilEvents;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
